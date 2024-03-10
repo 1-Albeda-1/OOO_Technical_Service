@@ -28,22 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonEnter = new System.Windows.Forms.Button();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonEnterGuest = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.checkBoxPassView = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonEnter
             // 
-            this.button1.Location = new System.Drawing.Point(46, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 67);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Войти";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonEnter.Location = new System.Drawing.Point(46, 193);
+            this.buttonEnter.Name = "buttonEnter";
+            this.buttonEnter.Size = new System.Drawing.Size(176, 67);
+            this.buttonEnter.TabIndex = 0;
+            this.buttonEnter.Text = "Войти";
+            this.buttonEnter.UseVisualStyleBackColor = true;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
             // textBoxLogin
             // 
@@ -61,14 +63,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Логин";
             // 
-            // button2
+            // buttonEnterGuest
             // 
-            this.button2.Location = new System.Drawing.Point(259, 193);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 67);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Войти как гость";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonEnterGuest.Location = new System.Drawing.Point(259, 193);
+            this.buttonEnterGuest.Name = "buttonEnterGuest";
+            this.buttonEnterGuest.Size = new System.Drawing.Size(176, 67);
+            this.buttonEnterGuest.TabIndex = 3;
+            this.buttonEnterGuest.Text = "Войти как гость";
+            this.buttonEnterGuest.UseVisualStyleBackColor = true;
+            this.buttonEnterGuest.Click += new System.EventHandler(this.buttonEnterGuest_Click);
             // 
             // label2
             // 
@@ -86,17 +89,29 @@
             this.textBoxPassword.Size = new System.Drawing.Size(250, 29);
             this.textBoxPassword.TabIndex = 5;
             // 
+            // checkBoxPassView
+            // 
+            this.checkBoxPassView.AutoSize = true;
+            this.checkBoxPassView.Location = new System.Drawing.Point(426, 125);
+            this.checkBoxPassView.Name = "checkBoxPassView";
+            this.checkBoxPassView.Size = new System.Drawing.Size(196, 29);
+            this.checkBoxPassView.TabIndex = 6;
+            this.checkBoxPassView.Text = "Показать пароль";
+            this.checkBoxPassView.UseVisualStyleBackColor = true;
+            this.checkBoxPassView.CheckedChanged += new System.EventHandler(this.checkBoxPassView_CheckedChanged);
+            // 
             // AuthorizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 297);
+            this.ClientSize = new System.Drawing.Size(671, 297);
+            this.Controls.Add(this.checkBoxPassView);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonEnterGuest);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxLogin);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonEnter);
             this.Name = "AuthorizationForm";
             this.Text = "Авторизация";
             this.ResumeLayout(false);
@@ -106,12 +121,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonEnter;
         private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonEnterGuest;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.CheckBox checkBoxPassView;
     }
 }
 

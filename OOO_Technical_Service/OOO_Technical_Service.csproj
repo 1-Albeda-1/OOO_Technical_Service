@@ -62,6 +62,18 @@
     <Compile Include="Forms\AddCommentForm.Designer.cs">
       <DependentUpon>AddCommentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddEditClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditClientForm.Designer.cs">
+      <DependentUpon>AddEditClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEmployeeForm.Designer.cs">
+      <DependentUpon>AddEmployeeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +98,6 @@
     <Compile Include="Forms\AddRequestForm.Designer.cs">
       <DependentUpon>AddRequestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EmployeeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EmployeeForm.Designer.cs">
-      <DependentUpon>EmployeeForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,8 +118,18 @@
     <Compile Include="RequestUserControl.Designer.cs">
       <DependentUpon>RequestUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkToEmployee.cs" />
     <EmbeddedResource Include="Forms\AddCommentForm.resx">
       <DependentUpon>AddCommentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditClientForm.resx">
+      <DependentUpon>AddEditClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEmployeeForm.resx">
+      <DependentUpon>AddEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditRequestForm.resx">
       <DependentUpon>EditRequestForm.cs</DependentUpon>

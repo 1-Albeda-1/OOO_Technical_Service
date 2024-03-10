@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OOO_Technical_Service.Forms
 {
-    public partial class EmployeeForm : Form
+    public partial class AddEmployeeForm : Form
     {
-        public EmployeeForm()
+        public AddEmployeeForm()
         {
             InitializeComponent();
         }
