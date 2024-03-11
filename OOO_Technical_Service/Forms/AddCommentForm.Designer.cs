@@ -59,21 +59,27 @@
             // 
             // buttonClose
             // 
+            this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonClose.Location = new System.Drawing.Point(302, 263);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(161, 60);
             this.buttonClose.TabIndex = 20;
             this.buttonClose.Text = "Закрыть";
-            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.UseVisualStyleBackColor = false;
             // 
             // buttonSave
             // 
+            this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSave.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonSave.Location = new System.Drawing.Point(104, 263);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(161, 60);
             this.buttonSave.TabIndex = 19;
             this.buttonSave.Text = "Сохранить";
-            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -95,9 +101,11 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.panel1.Controls.Add(this.labelFIO);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.SystemColors.Control;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(567, 100);
@@ -107,6 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(567, 375);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.richTextBoxComment);

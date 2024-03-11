@@ -41,22 +41,28 @@
             // 
             // buttonSave
             // 
+            this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSave.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonSave.Location = new System.Drawing.Point(109, 424);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(161, 60);
             this.buttonSave.TabIndex = 2;
             this.buttonSave.Text = "Сохранить";
-            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonClose
             // 
+            this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonClose.Location = new System.Drawing.Point(307, 424);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(161, 60);
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "Закрыть";
-            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // label3
@@ -115,6 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(614, 520);
             this.Controls.Add(this.checkedListBoxEmployees);
             this.Controls.Add(this.label1);

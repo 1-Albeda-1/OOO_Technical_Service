@@ -40,12 +40,15 @@
             // 
             // buttonEnter
             // 
+            this.buttonEnter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.buttonEnter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEnter.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonEnter.Location = new System.Drawing.Point(46, 193);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(176, 67);
             this.buttonEnter.TabIndex = 0;
             this.buttonEnter.Text = "Войти";
-            this.buttonEnter.UseVisualStyleBackColor = true;
+            this.buttonEnter.UseVisualStyleBackColor = false;
             this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
             // textBoxLogin
@@ -66,12 +69,15 @@
             // 
             // buttonEnterGuest
             // 
+            this.buttonEnterGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.buttonEnterGuest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEnterGuest.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonEnterGuest.Location = new System.Drawing.Point(259, 193);
             this.buttonEnterGuest.Name = "buttonEnterGuest";
             this.buttonEnterGuest.Size = new System.Drawing.Size(176, 67);
             this.buttonEnterGuest.TabIndex = 3;
             this.buttonEnterGuest.Text = "Войти как гость";
-            this.buttonEnterGuest.UseVisualStyleBackColor = true;
+            this.buttonEnterGuest.UseVisualStyleBackColor = false;
             this.buttonEnterGuest.Click += new System.EventHandler(this.buttonEnterGuest_Click);
             // 
             // label2
@@ -105,6 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(671, 297);
             this.Controls.Add(this.checkBoxPassView);
             this.Controls.Add(this.textBoxPassword);
