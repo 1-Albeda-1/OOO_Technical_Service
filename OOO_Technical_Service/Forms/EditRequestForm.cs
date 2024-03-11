@@ -18,7 +18,7 @@ namespace OOO_Technical_Service.Forms
         {
             InitializeComponent();
             comboBoxStatus.DisplayMember = nameof(Status.Title);
-            checkedListBoxEmployees.DisplayMember = nameof(Employee.LastName);
+            checkedListBoxEmployees.DisplayMember = nameof(Employee.FullName);
             Request = new Request();
         }
         public List<int> GetCheckedTypes()

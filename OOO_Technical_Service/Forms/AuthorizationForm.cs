@@ -50,9 +50,7 @@ namespace OOO_Technical_Service
         {
             WorkToEmployee.Employee = new Employee
             {
-                LastName = string.Empty,
-                FirstName = "Неавторизованный гость",
-                Patronymic = string.Empty,
+                FullName = "Неавторизованный гость",
                 RoleId = 1
             };
             MenuForm form = new MenuForm();

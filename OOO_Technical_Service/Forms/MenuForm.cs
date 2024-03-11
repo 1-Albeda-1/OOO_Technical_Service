@@ -18,7 +18,7 @@ namespace OOO_Technical_Service.Forms
         public MenuForm()
         {
             InitializeComponent();
-            toolStripLabelFIO.Text = $"Пользователь: {WorkToEmployee.Employee.LastName} {WorkToEmployee.Employee.FirstName} {WorkToEmployee.Employee.Patronymic}";
+            toolStripLabelFIO.Text = $"Пользователь: {WorkToEmployee.Employee.FullName}";
             using (var db = new TechnicalSecviceContext())
             {
                 var role = db.Roles.FirstOrDefault(x => x.Id == WorkToEmployee.Employee.RoleId);

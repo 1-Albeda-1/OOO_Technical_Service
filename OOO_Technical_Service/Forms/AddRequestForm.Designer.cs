@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxEquipment = new System.Windows.Forms.TextBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBoxPriority = new System.Windows.Forms.ComboBox();
+            this.comboBoxEquipment = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -55,21 +55,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Оборудование";
             // 
-            // textBoxEquipment
-            // 
-            this.textBoxEquipment.Location = new System.Drawing.Point(277, 46);
-            this.textBoxEquipment.Name = "textBoxEquipment";
-            this.textBoxEquipment.Size = new System.Drawing.Size(306, 29);
-            this.textBoxEquipment.TabIndex = 1;
-            // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(166, 641);
+            this.buttonSave.Location = new System.Drawing.Point(164, 641);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(161, 60);
             this.buttonSave.TabIndex = 2;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonClose
             // 
@@ -79,6 +73,7 @@
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // label2
             // 
@@ -178,16 +173,29 @@
             // comboBoxPriority
             // 
             this.comboBoxPriority.FormattingEnabled = true;
+            this.comboBoxPriority.Items.AddRange(new object[] {
+            "Высокий",
+            "Низкий",
+            "Средний"});
             this.comboBoxPriority.Location = new System.Drawing.Point(273, 576);
             this.comboBoxPriority.Name = "comboBoxPriority";
             this.comboBoxPriority.Size = new System.Drawing.Size(310, 32);
             this.comboBoxPriority.TabIndex = 17;
+            // 
+            // comboBoxEquipment
+            // 
+            this.comboBoxEquipment.FormattingEnabled = true;
+            this.comboBoxEquipment.Location = new System.Drawing.Point(278, 42);
+            this.comboBoxEquipment.Name = "comboBoxEquipment";
+            this.comboBoxEquipment.Size = new System.Drawing.Size(306, 32);
+            this.comboBoxEquipment.TabIndex = 19;
             // 
             // AddRequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(725, 746);
+            this.Controls.Add(this.comboBoxEquipment);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBoxPriority);
             this.Controls.Add(this.checkedListBoxEmployees);
@@ -202,7 +210,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.textBoxEquipment);
             this.Controls.Add(this.label1);
             this.Name = "AddRequestForm";
             this.Text = "Добавить заявку";
@@ -214,7 +221,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxEquipment;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Label label2;
@@ -229,5 +235,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBoxPriority;
+        private System.Windows.Forms.ComboBox comboBoxEquipment;
     }
 }

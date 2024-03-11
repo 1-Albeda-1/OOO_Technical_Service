@@ -19,9 +19,7 @@ namespace OOO_Technical_Service
                     employee = new Employee()
                     { 
                         Id = -1,
-                        FirstName = string.Empty,
-                        LastName = "Неавторизованный гость",
-                        Patronymic = string.Empty,
+                        FullName = "Неавторизованный гость",
                         RoleId = 1,
                     };
                 }
