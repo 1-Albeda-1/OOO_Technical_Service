@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEditClientForm));
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.textBoxFullName = new System.Windows.Forms.TextBox();
@@ -118,6 +119,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxFullName);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddEditClientForm";
             this.Text = "Добавить клиента";
             this.ResumeLayout(false);

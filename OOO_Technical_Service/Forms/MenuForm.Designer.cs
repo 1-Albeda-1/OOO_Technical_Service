@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.базыДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заявкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.клиентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.авторизацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьРаботникаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabelFIO = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabelRole = new System.Windows.Forms.ToolStripLabel();
-            this.авторизацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.заявкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавитьРаботникаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.клиентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +69,19 @@
             this.базыДанныхToolStripMenuItem.Size = new System.Drawing.Size(155, 34);
             this.базыДанныхToolStripMenuItem.Text = "Базы данных";
             // 
+            // заявкиToolStripMenuItem
+            // 
+            this.заявкиToolStripMenuItem.Name = "заявкиToolStripMenuItem";
+            this.заявкиToolStripMenuItem.Size = new System.Drawing.Size(213, 40);
+            this.заявкиToolStripMenuItem.Text = "Заявки";
+            this.заявкиToolStripMenuItem.Click += new System.EventHandler(this.заявкиToolStripMenuItem_Click);
+            // 
+            // клиентыToolStripMenuItem
+            // 
+            this.клиентыToolStripMenuItem.Name = "клиентыToolStripMenuItem";
+            this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(213, 40);
+            this.клиентыToolStripMenuItem.Text = "Клиенты";
+            // 
             // справкаToolStripMenuItem
             // 
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
@@ -81,6 +95,21 @@
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(91, 34);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // авторизацияToolStripMenuItem
+            // 
+            this.авторизацияToolStripMenuItem.Name = "авторизацияToolStripMenuItem";
+            this.авторизацияToolStripMenuItem.Size = new System.Drawing.Size(157, 34);
+            this.авторизацияToolStripMenuItem.Text = "Авторизация";
+            this.авторизацияToolStripMenuItem.Click += new System.EventHandler(this.авторизацияToolStripMenuItem_Click);
+            // 
+            // добавитьРаботникаToolStripMenuItem
+            // 
+            this.добавитьРаботникаToolStripMenuItem.Name = "добавитьРаботникаToolStripMenuItem";
+            this.добавитьРаботникаToolStripMenuItem.Size = new System.Drawing.Size(231, 34);
+            this.добавитьРаботникаToolStripMenuItem.Text = "Добавить работника";
+            this.добавитьРаботникаToolStripMenuItem.Visible = false;
+            this.добавитьРаботникаToolStripMenuItem.Click += new System.EventHandler(this.добавитьРаботникаToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
@@ -107,34 +136,6 @@
             this.toolStripLabelRole.Size = new System.Drawing.Size(80, 30);
             this.toolStripLabelRole.Text = "Статус:";
             // 
-            // авторизацияToolStripMenuItem
-            // 
-            this.авторизацияToolStripMenuItem.Name = "авторизацияToolStripMenuItem";
-            this.авторизацияToolStripMenuItem.Size = new System.Drawing.Size(157, 34);
-            this.авторизацияToolStripMenuItem.Text = "Авторизация";
-            this.авторизацияToolStripMenuItem.Click += new System.EventHandler(this.авторизацияToolStripMenuItem_Click);
-            // 
-            // заявкиToolStripMenuItem
-            // 
-            this.заявкиToolStripMenuItem.Name = "заявкиToolStripMenuItem";
-            this.заявкиToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
-            this.заявкиToolStripMenuItem.Text = "Заявки";
-            this.заявкиToolStripMenuItem.Click += new System.EventHandler(this.заявкиToolStripMenuItem_Click);
-            // 
-            // добавитьРаботникаToolStripMenuItem
-            // 
-            this.добавитьРаботникаToolStripMenuItem.Name = "добавитьРаботникаToolStripMenuItem";
-            this.добавитьРаботникаToolStripMenuItem.Size = new System.Drawing.Size(231, 34);
-            this.добавитьРаботникаToolStripMenuItem.Text = "Добавить работника";
-            this.добавитьРаботникаToolStripMenuItem.Visible = false;
-            this.добавитьРаботникаToolStripMenuItem.Click += new System.EventHandler(this.добавитьРаботникаToolStripMenuItem_Click);
-            // 
-            // клиентыToolStripMenuItem
-            // 
-            this.клиентыToolStripMenuItem.Name = "клиентыToolStripMenuItem";
-            this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
-            this.клиентыToolStripMenuItem.Text = "Клиенты";
-            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -142,6 +143,7 @@
             this.ClientSize = new System.Drawing.Size(900, 663);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuForm";
             this.Text = "Меню";

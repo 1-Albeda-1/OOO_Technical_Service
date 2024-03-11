@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEmployeeForm));
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,7 +43,7 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(252, 152);
+            this.textBoxPassword.Location = new System.Drawing.Point(171, 152);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(306, 29);
             this.textBoxPassword.TabIndex = 42;
@@ -50,7 +51,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(145, 156);
+            this.label5.Location = new System.Drawing.Point(64, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 25);
             this.label5.TabIndex = 41;
@@ -59,7 +60,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(148, 89);
+            this.label4.Location = new System.Drawing.Point(67, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 25);
             this.label4.TabIndex = 40;
@@ -67,7 +68,7 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(344, 284);
+            this.buttonClose.Location = new System.Drawing.Point(263, 284);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(161, 60);
             this.buttonClose.TabIndex = 35;
@@ -76,7 +77,7 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(146, 284);
+            this.buttonSave.Location = new System.Drawing.Point(65, 284);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(161, 60);
             this.buttonSave.TabIndex = 34;
@@ -85,7 +86,7 @@
             // 
             // textBoxFullName
             // 
-            this.textBoxFullName.Location = new System.Drawing.Point(252, 32);
+            this.textBoxFullName.Location = new System.Drawing.Point(171, 32);
             this.textBoxFullName.Name = "textBoxFullName";
             this.textBoxFullName.Size = new System.Drawing.Size(306, 29);
             this.textBoxFullName.TabIndex = 33;
@@ -93,7 +94,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(162, 36);
+            this.label1.Location = new System.Drawing.Point(81, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 25);
             this.label1.TabIndex = 32;
@@ -101,7 +102,7 @@
             // 
             // textBoxLogin
             // 
-            this.textBoxLogin.Location = new System.Drawing.Point(252, 89);
+            this.textBoxLogin.Location = new System.Drawing.Point(171, 89);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(306, 29);
             this.textBoxLogin.TabIndex = 43;
@@ -109,7 +110,7 @@
             // comboBoxRole
             // 
             this.comboBoxRole.FormattingEnabled = true;
-            this.comboBoxRole.Location = new System.Drawing.Point(252, 221);
+            this.comboBoxRole.Location = new System.Drawing.Point(171, 221);
             this.comboBoxRole.Name = "comboBoxRole";
             this.comboBoxRole.Size = new System.Drawing.Size(306, 32);
             this.comboBoxRole.TabIndex = 44;
@@ -117,7 +118,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(145, 224);
+            this.label6.Location = new System.Drawing.Point(64, 224);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 25);
             this.label6.TabIndex = 45;
@@ -127,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 409);
+            this.ClientSize = new System.Drawing.Size(552, 396);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBoxRole);
             this.Controls.Add(this.textBoxLogin);
@@ -138,6 +139,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxFullName);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddEmployeeForm";
             this.Text = "Добавить работника";
             this.ResumeLayout(false);

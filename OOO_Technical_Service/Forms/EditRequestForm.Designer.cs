@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditRequestForm));
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -123,6 +124,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonSave);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditRequestForm";
             this.Text = "Редактировать заявку";
             this.ResumeLayout(false);
