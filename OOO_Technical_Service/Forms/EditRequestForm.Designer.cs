@@ -1,6 +1,6 @@
 ﻿namespace OOO_Technical_Service.Forms
 {
-    partial class AddEditRequestForm
+    partial class EditRequestForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             this.comboBoxStatus = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxEmployees = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // buttonSave
@@ -46,6 +46,7 @@
             this.buttonSave.TabIndex = 2;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonClose
             // 
@@ -55,6 +56,7 @@
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // label3
             // 
@@ -77,10 +79,6 @@
             // comboBoxStatus
             // 
             this.comboBoxStatus.FormattingEnabled = true;
-            this.comboBoxStatus.Items.AddRange(new object[] {
-            "В ожидании",
-            "В работе",
-            "Выполнено"});
             this.comboBoxStatus.Location = new System.Drawing.Point(238, 358);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(310, 32);
@@ -104,20 +102,20 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Ответственные";
             // 
-            // checkedListBox1
+            // checkedListBoxEmployees
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(242, 144);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(306, 186);
-            this.checkedListBox1.TabIndex = 14;
+            this.checkedListBoxEmployees.FormattingEnabled = true;
+            this.checkedListBoxEmployees.Location = new System.Drawing.Point(242, 144);
+            this.checkedListBoxEmployees.Name = "checkedListBoxEmployees";
+            this.checkedListBoxEmployees.Size = new System.Drawing.Size(306, 186);
+            this.checkedListBoxEmployees.TabIndex = 14;
             // 
-            // AddEditRequestForm
+            // EditRequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 520);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.checkedListBoxEmployees);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBoxStatus);
@@ -125,7 +123,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonSave);
-            this.Name = "AddEditRequestForm";
+            this.Name = "EditRequestForm";
             this.Text = "Редактировать заявку";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,6 +138,6 @@
         private System.Windows.Forms.ComboBox comboBoxStatus;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBoxEmployees;
     }
 }

@@ -40,7 +40,7 @@
             this.comboBoxClient = new System.Windows.Forms.ComboBox();
             this.comboBoxStatus = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxEmployees = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBoxPriority = new System.Windows.Forms.ComboBox();
@@ -135,10 +135,6 @@
             // comboBoxStatus
             // 
             this.comboBoxStatus.FormattingEnabled = true;
-            this.comboBoxStatus.Items.AddRange(new object[] {
-            "В ожидании",
-            "В работе",
-            "Выполнено"});
             this.comboBoxStatus.Location = new System.Drawing.Point(274, 521);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(310, 32);
@@ -153,13 +149,13 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Статус заявки";
             // 
-            // checkedListBox1
+            // checkedListBoxEmployees
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(277, 261);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(306, 186);
-            this.checkedListBox1.TabIndex = 16;
+            this.checkedListBoxEmployees.FormattingEnabled = true;
+            this.checkedListBoxEmployees.Location = new System.Drawing.Point(277, 261);
+            this.checkedListBoxEmployees.Name = "checkedListBoxEmployees";
+            this.checkedListBoxEmployees.Size = new System.Drawing.Size(306, 186);
+            this.checkedListBoxEmployees.TabIndex = 16;
             // 
             // label6
             // 
@@ -182,10 +178,6 @@
             // comboBoxPriority
             // 
             this.comboBoxPriority.FormattingEnabled = true;
-            this.comboBoxPriority.Items.AddRange(new object[] {
-            "Высокий",
-            "Средний",
-            "Низкий"});
             this.comboBoxPriority.Location = new System.Drawing.Point(273, 576);
             this.comboBoxPriority.Name = "comboBoxPriority";
             this.comboBoxPriority.Size = new System.Drawing.Size(310, 32);
@@ -198,7 +190,7 @@
             this.ClientSize = new System.Drawing.Size(725, 746);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBoxPriority);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.checkedListBoxEmployees);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBoxStatus);
@@ -233,7 +225,7 @@
         private System.Windows.Forms.ComboBox comboBoxClient;
         private System.Windows.Forms.ComboBox comboBoxStatus;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBoxEmployees;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBoxPriority;

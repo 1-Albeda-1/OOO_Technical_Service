@@ -44,9 +44,7 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        FirstName = c.String(),
-                        LastName = c.String(),
-                        Patronymic = c.String(),
+                        FullName = c.String(),
                         Phone = c.String(),
                         Email = c.String(),
                     })
@@ -69,9 +67,7 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        FirstName = c.String(),
-                        LastName = c.String(),
-                        Patronymic = c.String(),
+                        FullName = c.String(),
                         Login = c.String(),
                         Password = c.String(),
                         RoleId = c.Int(nullable: false),

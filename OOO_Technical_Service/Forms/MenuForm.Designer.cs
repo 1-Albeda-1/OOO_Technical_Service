@@ -38,6 +38,7 @@
             this.авторизацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.заявкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавитьРаботникаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.клиентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +62,8 @@
             // базыДанныхToolStripMenuItem
             // 
             this.базыДанныхToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.заявкиToolStripMenuItem});
+            this.заявкиToolStripMenuItem,
+            this.клиентыToolStripMenuItem});
             this.базыДанныхToolStripMenuItem.Name = "базыДанныхToolStripMenuItem";
             this.базыДанныхToolStripMenuItem.Size = new System.Drawing.Size(155, 34);
             this.базыДанныхToolStripMenuItem.Text = "Базы данных";
@@ -124,6 +126,14 @@
             this.добавитьРаботникаToolStripMenuItem.Name = "добавитьРаботникаToolStripMenuItem";
             this.добавитьРаботникаToolStripMenuItem.Size = new System.Drawing.Size(231, 34);
             this.добавитьРаботникаToolStripMenuItem.Text = "Добавить работника";
+            this.добавитьРаботникаToolStripMenuItem.Visible = false;
+            this.добавитьРаботникаToolStripMenuItem.Click += new System.EventHandler(this.добавитьРаботникаToolStripMenuItem_Click);
+            // 
+            // клиентыToolStripMenuItem
+            // 
+            this.клиентыToolStripMenuItem.Name = "клиентыToolStripMenuItem";
+            this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.клиентыToolStripMenuItem.Text = "Клиенты";
             // 
             // MenuForm
             // 
@@ -157,5 +167,6 @@
         private System.Windows.Forms.ToolStripMenuItem авторизацияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem заявкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem добавитьРаботникаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem клиентыToolStripMenuItem;
     }
 }

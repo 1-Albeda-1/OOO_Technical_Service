@@ -32,7 +32,10 @@ namespace OOO_Technical_Service.Forms
                     toolStripLabelRole.Text = "Статус: Неавторизованный гость";
                 }
             }
-            
+            if(toolStripLabelRole.Text == "Статус: Администратор" || toolStripLabelRole.Text == "Статус: Менеджер")
+            {
+                добавитьРаботникаToolStripMenuItem.Visible = true;
+            }
         }
 
         private void заявкиToolStripMenuItem_Click(object sender, EventArgs e)
@@ -61,6 +64,12 @@ namespace OOO_Technical_Service.Forms
         private void MenuForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void добавитьРаботникаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddEmployeeForm form = new AddEmployeeForm();
+            form.ShowDialog();
         }
     }
 }
