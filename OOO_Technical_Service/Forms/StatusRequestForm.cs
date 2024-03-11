@@ -91,16 +91,13 @@ namespace OOO_Technical_Service.Forms
                 using (var db = new TechnicalSecviceContext())
                 {
                     var ids = form.GetCheckedTypes();
-                    form.Re.Types = db.Types.Where(x => ids.Contains(x.Id)).ToList();
-                    db.Tours.Add(addTour.Tour);
+                    form.Request.Employees = db.Employees.Where(x => ids.Contains(x.Id)).ToList();
+                    db.Requests.Add(form.Request);
                     db.SaveChanges();
                 }
             }
-
-            var tourInfo = new TourInfo(addTour.Tour);
-            tourInfo.Parent = flowLayoutPanel1;
-            allCount += tourInfo.Tour.Price * tourInfo.Tour.TicketCount;
-            labelAllPrice.Text = allCount.ToString();
+            var requestUserControl = new RequestUserControl(form.Request);
+            requestUserControl.Parent = flowLayoutPanel1;
         }
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)

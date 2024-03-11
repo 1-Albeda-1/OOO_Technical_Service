@@ -29,7 +29,7 @@ namespace OOO_Technical_Service.Forms
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(richTextBoxDescription.Text) && !string.IsNullOrWhiteSpace(textBoxEquipment.Text))
+            if (!string.IsNullOrWhiteSpace(richTextBoxDescription.Text))
             {
                 Request.EquipmentId = ((Equipment)comboBoxEquipment.SelectedItem).Id;
                 Request.BrokenTypeId = ((BrokenType)comboBoxBrokeType.SelectedItem).Id;
@@ -47,5 +47,7 @@ namespace OOO_Technical_Service.Forms
         {
             this.Close();
         }
+
+     
     }
 }

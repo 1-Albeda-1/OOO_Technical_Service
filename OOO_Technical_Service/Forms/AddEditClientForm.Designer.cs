@@ -43,10 +43,11 @@
             // 
             this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonClose.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonClose.Location = new System.Drawing.Point(308, 220);
+            this.buttonClose.Location = new System.Drawing.Point(178, 145);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(161, 55);
+            this.buttonClose.Size = new System.Drawing.Size(104, 38);
             this.buttonClose.TabIndex = 22;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = false;
@@ -55,69 +56,73 @@
             // 
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSave.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSave.Location = new System.Drawing.Point(110, 220);
+            this.buttonSave.Location = new System.Drawing.Point(45, 145);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(161, 55);
+            this.buttonSave.Size = new System.Drawing.Size(104, 38);
             this.buttonSave.TabIndex = 21;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = false;
             // 
             // textBoxFullName
             // 
-            this.textBoxFullName.Location = new System.Drawing.Point(253, 28);
+            this.textBoxFullName.Location = new System.Drawing.Point(152, 26);
             this.textBoxFullName.Name = "textBoxFullName";
-            this.textBoxFullName.Size = new System.Drawing.Size(306, 31);
+            this.textBoxFullName.Size = new System.Drawing.Size(167, 21);
             this.textBoxFullName.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(163, 32);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(104, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 23);
+            this.label1.Size = new System.Drawing.Size(40, 17);
             this.label1.TabIndex = 19;
             this.label1.Text = "ФИО";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 94);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(18, 65);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(194, 23);
+            this.label4.Size = new System.Drawing.Size(126, 17);
             this.label4.TabIndex = 27;
             this.label4.Text = "Номер телефона";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(146, 155);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(98, 101);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 23);
+            this.label5.Size = new System.Drawing.Size(46, 17);
             this.label5.TabIndex = 29;
             this.label5.Text = "Почта";
             // 
             // maskedTextBoxPhone
             // 
-            this.maskedTextBoxPhone.Location = new System.Drawing.Point(253, 94);
+            this.maskedTextBoxPhone.Location = new System.Drawing.Point(152, 63);
             this.maskedTextBoxPhone.Mask = "(999) 000-0000";
             this.maskedTextBoxPhone.Name = "maskedTextBoxPhone";
-            this.maskedTextBoxPhone.Size = new System.Drawing.Size(306, 31);
+            this.maskedTextBoxPhone.Size = new System.Drawing.Size(167, 21);
             this.maskedTextBoxPhone.TabIndex = 31;
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(253, 151);
+            this.textBoxEmail.Location = new System.Drawing.Point(152, 101);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(306, 31);
+            this.textBoxEmail.Size = new System.Drawing.Size(167, 21);
             this.textBoxEmail.TabIndex = 30;
             // 
             // AddEditClientForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(617, 333);
+            this.ClientSize = new System.Drawing.Size(331, 215);
             this.Controls.Add(this.maskedTextBoxPhone);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.label5);
