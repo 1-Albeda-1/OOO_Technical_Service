@@ -50,9 +50,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 49);
+            this.label1.Location = new System.Drawing.Point(104, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 25);
+            this.label1.Size = new System.Drawing.Size(163, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Оборудование";
             // 
@@ -61,9 +61,9 @@
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSave.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSave.Location = new System.Drawing.Point(164, 641);
+            this.buttonSave.Location = new System.Drawing.Point(164, 588);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(161, 60);
+            this.buttonSave.Size = new System.Drawing.Size(161, 55);
             this.buttonSave.TabIndex = 2;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = false;
@@ -74,9 +74,9 @@
             this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonClose.Location = new System.Drawing.Point(364, 641);
+            this.buttonClose.Location = new System.Drawing.Point(364, 588);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(161, 60);
+            this.buttonClose.Size = new System.Drawing.Size(161, 55);
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = false;
@@ -85,95 +85,95 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 102);
+            this.label2.Location = new System.Drawing.Point(58, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 25);
+            this.label2.Size = new System.Drawing.Size(205, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Тип неисправности";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(147, 150);
+            this.label3.Location = new System.Drawing.Point(147, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 25);
+            this.label3.Size = new System.Drawing.Size(115, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "Описание";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(169, 471);
+            this.label4.Location = new System.Drawing.Point(169, 432);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 25);
+            this.label4.Size = new System.Drawing.Size(78, 23);
             this.label4.TabIndex = 6;
             this.label4.Text = "Клиент";
             // 
             // comboBoxBrokeType
             // 
             this.comboBoxBrokeType.FormattingEnabled = true;
-            this.comboBoxBrokeType.Location = new System.Drawing.Point(277, 102);
+            this.comboBoxBrokeType.Location = new System.Drawing.Point(277, 94);
             this.comboBoxBrokeType.Name = "comboBoxBrokeType";
-            this.comboBoxBrokeType.Size = new System.Drawing.Size(306, 32);
+            this.comboBoxBrokeType.Size = new System.Drawing.Size(306, 30);
             this.comboBoxBrokeType.TabIndex = 7;
             // 
             // richTextBoxDescription
             // 
-            this.richTextBoxDescription.Location = new System.Drawing.Point(277, 150);
+            this.richTextBoxDescription.Location = new System.Drawing.Point(277, 138);
             this.richTextBoxDescription.Name = "richTextBoxDescription";
             this.richTextBoxDescription.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBoxDescription.Size = new System.Drawing.Size(306, 96);
+            this.richTextBoxDescription.Size = new System.Drawing.Size(306, 88);
             this.richTextBoxDescription.TabIndex = 9;
             this.richTextBoxDescription.Text = "";
             // 
             // comboBoxClient
             // 
             this.comboBoxClient.FormattingEnabled = true;
-            this.comboBoxClient.Location = new System.Drawing.Point(274, 471);
+            this.comboBoxClient.Location = new System.Drawing.Point(274, 432);
             this.comboBoxClient.Name = "comboBoxClient";
-            this.comboBoxClient.Size = new System.Drawing.Size(310, 32);
+            this.comboBoxClient.Size = new System.Drawing.Size(310, 30);
             this.comboBoxClient.TabIndex = 10;
             // 
             // comboBoxStatus
             // 
             this.comboBoxStatus.FormattingEnabled = true;
-            this.comboBoxStatus.Location = new System.Drawing.Point(274, 521);
+            this.comboBoxStatus.Location = new System.Drawing.Point(274, 478);
             this.comboBoxStatus.Name = "comboBoxStatus";
-            this.comboBoxStatus.Size = new System.Drawing.Size(310, 32);
+            this.comboBoxStatus.Size = new System.Drawing.Size(310, 30);
             this.comboBoxStatus.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(103, 528);
+            this.label5.Location = new System.Drawing.Point(103, 484);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 25);
+            this.label5.Size = new System.Drawing.Size(148, 23);
             this.label5.TabIndex = 12;
             this.label5.Text = "Статус заявки";
             // 
             // checkedListBoxEmployees
             // 
             this.checkedListBoxEmployees.FormattingEnabled = true;
-            this.checkedListBoxEmployees.Location = new System.Drawing.Point(277, 261);
+            this.checkedListBoxEmployees.Location = new System.Drawing.Point(277, 239);
             this.checkedListBoxEmployees.Name = "checkedListBoxEmployees";
-            this.checkedListBoxEmployees.Size = new System.Drawing.Size(306, 186);
+            this.checkedListBoxEmployees.Size = new System.Drawing.Size(306, 144);
             this.checkedListBoxEmployees.TabIndex = 16;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(95, 274);
+            this.label6.Location = new System.Drawing.Point(95, 251);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 25);
+            this.label6.Size = new System.Drawing.Size(158, 23);
             this.label6.TabIndex = 15;
             this.label6.Text = "Ответственные";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(133, 583);
+            this.label7.Location = new System.Drawing.Point(133, 534);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 25);
+            this.label7.Size = new System.Drawing.Size(118, 23);
             this.label7.TabIndex = 18;
             this.label7.Text = "Приоритет";
             // 
@@ -184,25 +184,25 @@
             "Высокий",
             "Низкий",
             "Средний"});
-            this.comboBoxPriority.Location = new System.Drawing.Point(273, 576);
+            this.comboBoxPriority.Location = new System.Drawing.Point(273, 528);
             this.comboBoxPriority.Name = "comboBoxPriority";
-            this.comboBoxPriority.Size = new System.Drawing.Size(310, 32);
+            this.comboBoxPriority.Size = new System.Drawing.Size(310, 30);
             this.comboBoxPriority.TabIndex = 17;
             // 
             // comboBoxEquipment
             // 
             this.comboBoxEquipment.FormattingEnabled = true;
-            this.comboBoxEquipment.Location = new System.Drawing.Point(278, 42);
+            this.comboBoxEquipment.Location = new System.Drawing.Point(278, 38);
             this.comboBoxEquipment.Name = "comboBoxEquipment";
-            this.comboBoxEquipment.Size = new System.Drawing.Size(306, 32);
+            this.comboBoxEquipment.Size = new System.Drawing.Size(306, 30);
             this.comboBoxEquipment.TabIndex = 19;
             // 
             // AddRequestForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(725, 746);
+            this.ClientSize = new System.Drawing.Size(725, 684);
             this.Controls.Add(this.comboBoxEquipment);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBoxPriority);
@@ -219,6 +219,7 @@
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Century Gothic", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddRequestForm";
             this.Text = "Добавить заявку";

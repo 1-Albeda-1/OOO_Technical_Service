@@ -43,9 +43,9 @@
             this.buttonEnter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonEnter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonEnter.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonEnter.Location = new System.Drawing.Point(46, 193);
+            this.buttonEnter.Location = new System.Drawing.Point(46, 177);
             this.buttonEnter.Name = "buttonEnter";
-            this.buttonEnter.Size = new System.Drawing.Size(176, 67);
+            this.buttonEnter.Size = new System.Drawing.Size(176, 61);
             this.buttonEnter.TabIndex = 0;
             this.buttonEnter.Text = "Войти";
             this.buttonEnter.UseVisualStyleBackColor = false;
@@ -53,17 +53,17 @@
             // 
             // textBoxLogin
             // 
-            this.textBoxLogin.Location = new System.Drawing.Point(138, 53);
+            this.textBoxLogin.Location = new System.Drawing.Point(138, 49);
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(250, 29);
+            this.textBoxLogin.Size = new System.Drawing.Size(250, 31);
             this.textBoxLogin.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 53);
+            this.label1.Location = new System.Drawing.Point(38, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 25);
+            this.label1.Size = new System.Drawing.Size(67, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Логин";
             // 
@@ -72,9 +72,9 @@
             this.buttonEnterGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonEnterGuest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonEnterGuest.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonEnterGuest.Location = new System.Drawing.Point(259, 193);
+            this.buttonEnterGuest.Location = new System.Drawing.Point(259, 177);
             this.buttonEnterGuest.Name = "buttonEnterGuest";
-            this.buttonEnterGuest.Size = new System.Drawing.Size(176, 67);
+            this.buttonEnterGuest.Size = new System.Drawing.Size(176, 61);
             this.buttonEnterGuest.TabIndex = 3;
             this.buttonEnterGuest.Text = "Войти как гость";
             this.buttonEnterGuest.UseVisualStyleBackColor = false;
@@ -83,25 +83,25 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 125);
+            this.label2.Location = new System.Drawing.Point(38, 115);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 25);
+            this.label2.Size = new System.Drawing.Size(85, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Пароль";
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(138, 125);
+            this.textBoxPassword.Location = new System.Drawing.Point(138, 115);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(250, 29);
+            this.textBoxPassword.Size = new System.Drawing.Size(250, 31);
             this.textBoxPassword.TabIndex = 5;
             // 
             // checkBoxPassView
             // 
             this.checkBoxPassView.AutoSize = true;
-            this.checkBoxPassView.Location = new System.Drawing.Point(426, 125);
+            this.checkBoxPassView.Location = new System.Drawing.Point(426, 115);
             this.checkBoxPassView.Name = "checkBoxPassView";
-            this.checkBoxPassView.Size = new System.Drawing.Size(196, 29);
+            this.checkBoxPassView.Size = new System.Drawing.Size(205, 27);
             this.checkBoxPassView.TabIndex = 6;
             this.checkBoxPassView.Text = "Показать пароль";
             this.checkBoxPassView.UseVisualStyleBackColor = true;
@@ -109,10 +109,10 @@
             // 
             // AuthorizationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(671, 297);
+            this.ClientSize = new System.Drawing.Size(671, 272);
             this.Controls.Add(this.checkBoxPassView);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.label2);
@@ -120,6 +120,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.buttonEnter);
+            this.Font = new System.Drawing.Font("Century Gothic", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AuthorizationForm";
             this.Text = "Авторизация";

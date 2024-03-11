@@ -43,26 +43,26 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(171, 152);
+            this.textBoxPassword.Location = new System.Drawing.Point(171, 139);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(306, 29);
+            this.textBoxPassword.Size = new System.Drawing.Size(306, 31);
             this.textBoxPassword.TabIndex = 42;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(64, 156);
+            this.label5.Location = new System.Drawing.Point(64, 143);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 25);
+            this.label5.Size = new System.Drawing.Size(85, 23);
             this.label5.TabIndex = 41;
             this.label5.Text = "Пароль";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(67, 89);
+            this.label4.Location = new System.Drawing.Point(67, 82);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 25);
+            this.label4.Size = new System.Drawing.Size(67, 23);
             this.label4.TabIndex = 40;
             this.label4.Text = "Логин";
             // 
@@ -71,9 +71,9 @@
             this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonClose.Location = new System.Drawing.Point(263, 284);
+            this.buttonClose.Location = new System.Drawing.Point(263, 260);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(161, 60);
+            this.buttonClose.Size = new System.Drawing.Size(161, 55);
             this.buttonClose.TabIndex = 35;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = false;
@@ -83,59 +83,59 @@
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSave.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSave.Location = new System.Drawing.Point(65, 284);
+            this.buttonSave.Location = new System.Drawing.Point(65, 260);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(161, 60);
+            this.buttonSave.Size = new System.Drawing.Size(161, 55);
             this.buttonSave.TabIndex = 34;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = false;
             // 
             // textBoxFullName
             // 
-            this.textBoxFullName.Location = new System.Drawing.Point(171, 32);
+            this.textBoxFullName.Location = new System.Drawing.Point(171, 29);
             this.textBoxFullName.Name = "textBoxFullName";
-            this.textBoxFullName.Size = new System.Drawing.Size(306, 29);
+            this.textBoxFullName.Size = new System.Drawing.Size(306, 31);
             this.textBoxFullName.TabIndex = 33;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 36);
+            this.label1.Location = new System.Drawing.Point(81, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 25);
+            this.label1.Size = new System.Drawing.Size(59, 23);
             this.label1.TabIndex = 32;
             this.label1.Text = "ФИО";
             // 
             // textBoxLogin
             // 
-            this.textBoxLogin.Location = new System.Drawing.Point(171, 89);
+            this.textBoxLogin.Location = new System.Drawing.Point(171, 82);
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(306, 29);
+            this.textBoxLogin.Size = new System.Drawing.Size(306, 31);
             this.textBoxLogin.TabIndex = 43;
             // 
             // comboBoxRole
             // 
             this.comboBoxRole.FormattingEnabled = true;
-            this.comboBoxRole.Location = new System.Drawing.Point(171, 221);
+            this.comboBoxRole.Location = new System.Drawing.Point(171, 203);
             this.comboBoxRole.Name = "comboBoxRole";
-            this.comboBoxRole.Size = new System.Drawing.Size(306, 32);
+            this.comboBoxRole.Size = new System.Drawing.Size(306, 30);
             this.comboBoxRole.TabIndex = 44;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(64, 224);
+            this.label6.Location = new System.Drawing.Point(64, 205);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 25);
+            this.label6.Size = new System.Drawing.Size(80, 23);
             this.label6.TabIndex = 45;
             this.label6.Text = "Статус";
             // 
             // AddEmployeeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(552, 396);
+            this.ClientSize = new System.Drawing.Size(552, 363);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBoxRole);
             this.Controls.Add(this.textBoxLogin);
@@ -146,6 +146,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxFullName);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Century Gothic", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddEmployeeForm";
             this.Text = "Добавить работника";

@@ -41,19 +41,19 @@
             // 
             // richTextBoxComment
             // 
-            this.richTextBoxComment.Location = new System.Drawing.Point(214, 121);
+            this.richTextBoxComment.Location = new System.Drawing.Point(214, 111);
             this.richTextBoxComment.Name = "richTextBoxComment";
             this.richTextBoxComment.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBoxComment.Size = new System.Drawing.Size(306, 96);
+            this.richTextBoxComment.Size = new System.Drawing.Size(306, 88);
             this.richTextBoxComment.TabIndex = 25;
             this.richTextBoxComment.Text = "";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 121);
+            this.label3.Location = new System.Drawing.Point(43, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 25);
+            this.label3.Size = new System.Drawing.Size(156, 23);
             this.label3.TabIndex = 22;
             this.label3.Text = "Комментарий";
             // 
@@ -62,9 +62,9 @@
             this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonClose.Location = new System.Drawing.Point(302, 263);
+            this.buttonClose.Location = new System.Drawing.Point(302, 241);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(161, 60);
+            this.buttonClose.Size = new System.Drawing.Size(161, 55);
             this.buttonClose.TabIndex = 20;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = false;
@@ -74,9 +74,9 @@
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSave.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSave.Location = new System.Drawing.Point(104, 263);
+            this.buttonSave.Location = new System.Drawing.Point(104, 241);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(161, 60);
+            this.buttonSave.Size = new System.Drawing.Size(161, 55);
             this.buttonSave.TabIndex = 19;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = false;
@@ -84,18 +84,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 37);
+            this.label1.Location = new System.Drawing.Point(27, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 25);
+            this.label1.Size = new System.Drawing.Size(109, 23);
             this.label1.TabIndex = 26;
             this.label1.Text = "Работник:";
             // 
             // labelFIO
             // 
             this.labelFIO.AutoSize = true;
-            this.labelFIO.Location = new System.Drawing.Point(139, 37);
+            this.labelFIO.Location = new System.Drawing.Point(139, 34);
             this.labelFIO.Name = "labelFIO";
-            this.labelFIO.Size = new System.Drawing.Size(60, 25);
+            this.labelFIO.Size = new System.Drawing.Size(59, 23);
             this.labelFIO.TabIndex = 27;
             this.labelFIO.Text = "ФИО";
             // 
@@ -108,20 +108,21 @@
             this.panel1.ForeColor = System.Drawing.SystemColors.Control;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(567, 100);
+            this.panel1.Size = new System.Drawing.Size(567, 92);
             this.panel1.TabIndex = 28;
             // 
             // AddCommentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(567, 375);
+            this.ClientSize = new System.Drawing.Size(567, 344);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.richTextBoxComment);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonSave);
+            this.Font = new System.Drawing.Font("Century Gothic", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddCommentForm";
             this.Text = "Добавить комментарий";
