@@ -23,6 +23,7 @@ namespace OOO_Technical_Service
         {
             InitializeComponent();
             this.request = request;
+            dataGridView1.AutoGenerateColumns = false;
             InitRequest(request);
             PrintComment();
         }
@@ -30,13 +31,13 @@ namespace OOO_Technical_Service
         private void InitRequest(Request request)
         {
             labelNumber.Text = request.Id.ToString();
-            labelBrokenType.Text = request.BrokenType.ToString();
-            labelClient.Text = request.Client.ToString();
+            labelBrokenType.Text = request.BrokenType.Title;
+            labelClient.Text = request.Client.FullName;
             labelDate.Text = request.RequestDate.ToString();
-            labelDescription.Text = request.Description.ToString();
-            labelEquipment.Text = request.Equipment.ToString();
-            labelPriority.Text = request.Priority.ToString(); 
-            labelSatus.Text = request.Status.ToString();
+            labelDescription.Text = request.Description;
+            labelEquipment.Text = request.Equipment.Title;
+            labelPriority.Text = request.Priority;
+            labelSatus.Text = request.Status.Title;
 
             if (WorkToEmployee.Employee.RoleId == 1)
             {
@@ -48,7 +49,6 @@ namespace OOO_Technical_Service
             using (var db = new TechnicalSecviceContext())
             {
                 dataGridView1.DataSource = db.Comments.Include(x => x.Employee)
-                    .OrderBy(x => x.Employee)
                     .ToList();
             }
         }

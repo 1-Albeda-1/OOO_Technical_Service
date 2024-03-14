@@ -80,7 +80,7 @@
             this.заявкиToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.заявкиToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.заявкиToolStripMenuItem.Name = "заявкиToolStripMenuItem";
-            this.заявкиToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.заявкиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.заявкиToolStripMenuItem.Text = "Заявки";
             this.заявкиToolStripMenuItem.Click += new System.EventHandler(this.заявкиToolStripMenuItem_Click);
             // 
@@ -89,8 +89,9 @@
             this.клиентыToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.клиентыToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.клиентыToolStripMenuItem.Name = "клиентыToolStripMenuItem";
-            this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.клиентыToolStripMenuItem.Text = "Клиенты";
+            this.клиентыToolStripMenuItem.Click += new System.EventHandler(this.клиентыToolStripMenuItem_Click);
             // 
             // справкаToolStripMenuItem
             // 
@@ -171,7 +172,7 @@
             // 
             this.pictureBox1.Image = global::OOO_Technical_Service.Properties.Resources.icons8_tools_50;
             this.pictureBox1.Location = new System.Drawing.Point(286, 62);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(44, 43);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -190,7 +191,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(626, 332);
             this.MinimizeBox = false;

@@ -26,11 +26,7 @@ namespace OOO_Technical_Service.Forms
         {
             if (!string.IsNullOrWhiteSpace(richTextBoxComment.Text))
             {
-                using (var db = new TechnicalSecviceContext())
-                {
-                    var employeeId = db.Employees.FirstOrDefault(x => x.FullName == labelFIO.Text);
-                    Comment.EmployeeId = employeeId.Id;
-                }
+                Comment.EmployeeId = WorkToEmployee.Employee.Id;
                 Comment.CommentText = richTextBoxComment.Text;
                 DialogResult = DialogResult.OK;
             }

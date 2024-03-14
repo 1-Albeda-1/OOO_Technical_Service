@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace TechnicalService.Context.Models
 {
@@ -19,6 +20,10 @@ namespace TechnicalService.Context.Models
         public Employee() 
         {
             Requests = new HashSet<Request>();
+        }
+        public override string ToString()
+        {
+            return FullName;
         }
     }
 }

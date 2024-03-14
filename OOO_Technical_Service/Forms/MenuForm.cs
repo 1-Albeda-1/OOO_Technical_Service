@@ -32,16 +32,10 @@ namespace OOO_Technical_Service.Forms
                     toolStripLabelRole.Text = "Статус: Неавторизованный гость";
                 }
             }
-            if(toolStripLabelRole.Text == "Статус: Администратор" || toolStripLabelRole.Text == "Статус: Менеджер")
+            if(WorkToEmployee.Employee.RoleId == 3 || WorkToEmployee.Employee.RoleId == 4)
             {
                 добавитьРаботникаToolStripMenuItem.Visible = true;
             }
-        }
-
-        private void заявкиToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            StatusRequestForm form = new StatusRequestForm();
-            form.ShowDialog();
         }
 
         private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,16 +43,38 @@ namespace OOO_Technical_Service.Forms
             MessageBox.Show("");
         }
 
-        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        private void добавитьРаботникаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            AddEmployeeForm form = new AddEmployeeForm();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                using (var db = new TechnicalSecviceContext())
+                {
+                    db.Employees.Add(form.Employee);
+                    db.SaveChanges();
+                }
+            }
+        }
+        private void заявкиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StatusRequestForm form = new StatusRequestForm();
+            form.ShowDialog();
+        }
+
+        private void клиентыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClientForm form = new ClientForm();
+            form.ShowDialog();
         }
 
         private void авторизацияToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AuthorizationForm form = new AuthorizationForm();
-            form.ShowDialog();
-            this.Close();
+            form.ShowDialog();       
+        }
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void MenuForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -66,10 +82,6 @@ namespace OOO_Technical_Service.Forms
             Application.Exit();
         }
 
-        private void добавитьРаботникаToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AddEmployeeForm form = new AddEmployeeForm();
-            form.ShowDialog();
-        }
+        
     }
 }

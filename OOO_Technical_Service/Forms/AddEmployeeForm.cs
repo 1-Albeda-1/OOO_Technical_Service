@@ -18,6 +18,7 @@ namespace OOO_Technical_Service.Forms
         public AddEmployeeForm()
         {
             InitializeComponent();
+            comboBoxRole.DisplayMember = nameof(Role.RoleName);
             Employee = new Employee();
             Initialize();
         }

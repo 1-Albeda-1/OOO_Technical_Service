@@ -60,6 +60,7 @@ namespace OOO_Technical_Service.Forms
                 Request.StatusId = ((Status)comboBoxStatus.SelectedItem).Id;
                 Request.Priority = comboBoxPriority.Text;
                 Request.Description = richTextBoxDescription.Text;
+                Request.RequestDate = DateTimeOffset.Now;
                 DialogResult = DialogResult.OK;
             }
             else
