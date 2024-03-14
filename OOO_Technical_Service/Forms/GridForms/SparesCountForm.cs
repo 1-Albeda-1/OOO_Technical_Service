@@ -58,6 +58,7 @@ namespace OOO_Technical_Service.Forms.GridForms
                 }
                 toolStripLabelCount.Text = $"Кол-во записей: {count}";
                 dataGridView1.DataSource = db.SparesCounts.Include(x => x.SparesType)
+                    .OrderBy(x => x.Count)
                     .Skip(bindingSource.Position * pageSize)
                     .Take(pageSize)
                     .ToList();

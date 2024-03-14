@@ -72,6 +72,11 @@ namespace OOO_Technical_Service.Forms
             EquipmentForm form = new EquipmentForm();
             form.ShowDialog();
         }
+        private void запчастиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SparesCountForm form = new SparesCountForm();
+            form.ShowDialog();
+        }
 
         private void авторизацияToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -88,6 +93,6 @@ namespace OOO_Technical_Service.Forms
             Application.Exit();
         }
 
-       
+        
     }
 }

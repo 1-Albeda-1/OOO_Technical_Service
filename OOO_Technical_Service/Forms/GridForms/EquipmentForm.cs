@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
@@ -57,7 +58,7 @@ namespace OOO_Technical_Service.Forms.GridForms
                     bindingNavigator1.BindingSource = bindingSource;
                 }
                 toolStripLabelCount.Text = $"Кол-во записей: {count}";
-                dataGridView1.DataSource = db.Equipments
+                dataGridView1.DataSource = db.Equipments.Include(x => x.EquipmentType)
                 .OrderBy(x => x.Title)
                     .Skip(bindingSource.Position * pageSize)
                     .Take(pageSize)

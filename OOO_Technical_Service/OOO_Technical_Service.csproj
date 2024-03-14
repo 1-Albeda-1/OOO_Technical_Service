@@ -116,6 +116,12 @@
     <Compile Include="Forms\GridForms\EquipmentForm.Designer.cs">
       <DependentUpon>EquipmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\GridForms\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GridForms\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\GridForms\SparesCountForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     <EmbeddedResource Include="Forms\GridForms\EquipmentForm.resx">
       <DependentUpon>EquipmentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GridForms\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\GridForms\SparesCountForm.resx">
       <DependentUpon>SparesCountForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,13 +228,16 @@
   <ItemGroup>
     <Content Include="Resources\icons8-add-user-male-50.ico" />
     <Content Include="Resources\icons8-chat-bubble-50.ico" />
+    <Content Include="Resources\icons8-detail-67.ico" />
     <Content Include="Resources\icons8-tools-50.ico" />
     <Content Include="Resources\icons8-tools-50.png" />
     <Content Include="Resources\icons8-авторизация-50.ico" />
     <Content Include="Resources\icons8-добавить-свойство-50.ico" />
     <Content Include="Resources\icons8-запросить-услугу-50.ico" />
+    <Content Include="Resources\icons8-насос-50.ico" />
     <Content Include="Resources\icons8-пользователь-50.ico" />
     <Content Include="Resources\icons8-рабочий-50.ico" />
+    <Content Include="Resources\icons8-табель-успеваемости-50.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

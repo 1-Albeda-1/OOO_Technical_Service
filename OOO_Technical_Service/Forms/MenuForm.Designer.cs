@@ -41,8 +41,9 @@
             this.toolStripLabelFIO = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabelRole = new System.Windows.Forms.ToolStripLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.оборудованиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.запчастиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,7 +73,8 @@
             this.базыДанныхToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.заявкиToolStripMenuItem,
             this.клиентыToolStripMenuItem,
-            this.оборудованиеToolStripMenuItem});
+            this.оборудованиеToolStripMenuItem,
+            this.запчастиToolStripMenuItem});
             this.базыДанныхToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.базыДанныхToolStripMenuItem.Name = "базыДанныхToolStripMenuItem";
             this.базыДанныхToolStripMenuItem.Size = new System.Drawing.Size(174, 33);
@@ -172,17 +174,6 @@
     "лем, связанных с вашим оборудованием.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::OOO_Technical_Service.Properties.Resources.icons8_tools_50;
-            this.pictureBox1.Location = new System.Drawing.Point(524, 114);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(81, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // оборудованиеToolStripMenuItem
             // 
             this.оборудованиеToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
@@ -191,6 +182,26 @@
             this.оборудованиеToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.оборудованиеToolStripMenuItem.Text = "Оборудование";
             this.оборудованиеToolStripMenuItem.Click += new System.EventHandler(this.оборудованиеToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OOO_Technical_Service.Properties.Resources.icons8_tools_50;
+            this.pictureBox1.Location = new System.Drawing.Point(524, 114);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(81, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // запчастиToolStripMenuItem
+            // 
+            this.запчастиToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.запчастиToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.запчастиToolStripMenuItem.Name = "запчастиToolStripMenuItem";
+            this.запчастиToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.запчастиToolStripMenuItem.Text = "Запчасти";
+            this.запчастиToolStripMenuItem.Click += new System.EventHandler(this.запчастиToolStripMenuItem_Click);
             // 
             // MenuForm
             // 
@@ -238,5 +249,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem оборудованиеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem запчастиToolStripMenuItem;
     }
 }
