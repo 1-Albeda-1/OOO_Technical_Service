@@ -59,7 +59,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(755, 131);
+            this.panel1.Size = new System.Drawing.Size(759, 131);
             this.panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -184,22 +184,22 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 131);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(755, 330);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(759, 330);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // StatusRequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 461);
+            this.ClientSize = new System.Drawing.Size(759, 461);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(771, 500);
+            this.MaximumSize = new System.Drawing.Size(775, 500);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(771, 500);
+            this.MinimumSize = new System.Drawing.Size(775, 500);
             this.Name = "StatusRequestForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Статус заявок";

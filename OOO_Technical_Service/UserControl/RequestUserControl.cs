@@ -33,11 +33,12 @@ namespace OOO_Technical_Service
             labelNumber.Text = request.Id.ToString();
             labelBrokenType.Text = request.BrokenType.Title;
             labelClient.Text = request.Client.FullName;
-            labelDate.Text = request.RequestDate.ToString();
-            labelDescription.Text = request.Description;
+            richTextBoxDescription.Text = request.Description;
             labelEquipment.Text = request.Equipment.Title;
             labelPriority.Text = request.Priority;
             labelSatus.Text = request.Status.Title;
+            var date = request.RequestDate.ToString("dd-MM-yyyy");
+            labelDate.Text = date;
 
             if (WorkToEmployee.Employee.RoleId == 1)
             {
