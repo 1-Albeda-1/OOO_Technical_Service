@@ -72,7 +72,7 @@
             // 
             this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClose.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClose.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonClose.Location = new System.Drawing.Point(159, 173);
             this.buttonClose.Name = "buttonClose";
@@ -80,12 +80,13 @@
             this.buttonClose.TabIndex = 35;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonSave
             // 
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSave.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSave.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonSave.Location = new System.Drawing.Point(28, 173);
             this.buttonSave.Name = "buttonSave";
@@ -93,6 +94,7 @@
             this.buttonSave.TabIndex = 34;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // textBoxFullName
             // 
@@ -141,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(292, 246);
+            this.ClientSize = new System.Drawing.Size(292, 229);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBoxRole);
             this.Controls.Add(this.textBoxLogin);

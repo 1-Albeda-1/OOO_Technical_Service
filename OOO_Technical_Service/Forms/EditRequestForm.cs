@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechnicalService.Context.DB;
 using TechnicalService.Context.Models;
 
 namespace OOO_Technical_Service.Forms
@@ -20,6 +21,16 @@ namespace OOO_Technical_Service.Forms
             comboBoxStatus.DisplayMember = nameof(Status.Title);
             checkedListBoxEmployees.DisplayMember = nameof(Employee.FullName);
             Request = new Request();
+            Initialize();
+        }
+        private void Initialize()
+        {
+            using (var db = new TechnicalSecviceContext())
+            {
+                comboBoxStatus.Items.AddRange(db.Statuses.AsNoTracking().ToArray());
+                comboBoxStatus.SelectedIndex = 0;
+                checkedListBoxEmployees.Items.AddRange(db.Employees.AsNoTracking().ToArray());
+            }
         }
         public List<int> GetCheckedTypes()
             => checkedListBoxEmployees.CheckedItems.Cast<Employee>().Select(x => x.Id).ToList();

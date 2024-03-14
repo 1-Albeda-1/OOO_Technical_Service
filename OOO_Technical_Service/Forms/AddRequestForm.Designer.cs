@@ -63,7 +63,7 @@
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSave.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSave.Location = new System.Drawing.Point(78, 431);
+            this.buttonSave.Location = new System.Drawing.Point(64, 413);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(102, 37);
             this.buttonSave.TabIndex = 2;
@@ -77,7 +77,7 @@
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClose.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonClose.Location = new System.Drawing.Point(206, 431);
+            this.buttonClose.Location = new System.Drawing.Point(192, 413);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(102, 37);
             this.buttonClose.TabIndex = 3;
@@ -143,7 +143,7 @@
             // comboBoxStatus
             // 
             this.comboBoxStatus.FormattingEnabled = true;
-            this.comboBoxStatus.Location = new System.Drawing.Point(158, 334);
+            this.comboBoxStatus.Location = new System.Drawing.Point(157, 328);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(183, 24);
             this.comboBoxStatus.TabIndex = 11;
@@ -152,7 +152,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(52, 336);
+            this.label5.Location = new System.Drawing.Point(51, 330);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 17);
             this.label5.TabIndex = 12;
@@ -161,16 +161,16 @@
             // checkedListBoxEmployees
             // 
             this.checkedListBoxEmployees.FormattingEnabled = true;
-            this.checkedListBoxEmployees.Location = new System.Drawing.Point(161, 171);
+            this.checkedListBoxEmployees.Location = new System.Drawing.Point(161, 172);
             this.checkedListBoxEmployees.Name = "checkedListBoxEmployees";
-            this.checkedListBoxEmployees.Size = new System.Drawing.Size(179, 100);
+            this.checkedListBoxEmployees.Size = new System.Drawing.Size(180, 100);
             this.checkedListBoxEmployees.TabIndex = 16;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(52, 171);
+            this.label6.Location = new System.Drawing.Point(52, 172);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 17);
             this.label6.TabIndex = 15;
@@ -180,7 +180,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(72, 386);
+            this.label7.Location = new System.Drawing.Point(71, 369);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 17);
             this.label7.TabIndex = 18;
@@ -193,7 +193,7 @@
             "Высокий",
             "Низкий",
             "Средний"});
-            this.comboBoxPriority.Location = new System.Drawing.Point(157, 384);
+            this.comboBoxPriority.Location = new System.Drawing.Point(156, 367);
             this.comboBoxPriority.Name = "comboBoxPriority";
             this.comboBoxPriority.Size = new System.Drawing.Size(183, 24);
             this.comboBoxPriority.TabIndex = 17;
@@ -211,7 +211,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(377, 488);
+            this.ClientSize = new System.Drawing.Size(363, 462);
             this.Controls.Add(this.comboBoxEquipment);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBoxPriority);

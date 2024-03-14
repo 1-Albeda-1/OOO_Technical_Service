@@ -61,7 +61,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(491, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(610, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -136,7 +136,7 @@
             this.toolStripLabelRole});
             this.toolStrip1.Location = new System.Drawing.Point(0, 268);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(491, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(610, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "Пользователь:";
             // 
@@ -157,7 +157,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(32, 106);
+            this.label1.Location = new System.Drawing.Point(100, 107);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(415, 115);
@@ -170,7 +170,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::OOO_Technical_Service.Properties.Resources.icons8_tools_50;
-            this.pictureBox1.Location = new System.Drawing.Point(218, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(286, 62);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(44, 43);
@@ -183,7 +183,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(491, 293);
+            this.ClientSize = new System.Drawing.Size(610, 293);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
@@ -191,6 +191,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(626, 332);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(626, 332);
             this.Name = "MenuForm";
             this.Text = "Меню";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuForm_FormClosing);

@@ -52,7 +52,7 @@
             this.buttonEnter.Location = new System.Drawing.Point(25, 175);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(130, 37);
-            this.buttonEnter.TabIndex = 0;
+            this.buttonEnter.TabIndex = 3;
             this.buttonEnter.Text = "Войти";
             this.buttonEnter.UseVisualStyleBackColor = false;
             this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
@@ -83,7 +83,7 @@
             this.buttonEnterGuest.Location = new System.Drawing.Point(185, 175);
             this.buttonEnterGuest.Name = "buttonEnterGuest";
             this.buttonEnterGuest.Size = new System.Drawing.Size(130, 37);
-            this.buttonEnterGuest.TabIndex = 3;
+            this.buttonEnterGuest.TabIndex = 4;
             this.buttonEnterGuest.Text = "Войти как гость";
             this.buttonEnterGuest.UseVisualStyleBackColor = false;
             this.buttonEnterGuest.Click += new System.EventHandler(this.buttonEnterGuest_Click);
@@ -103,7 +103,7 @@
             this.textBoxPassword.Location = new System.Drawing.Point(77, 129);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(150, 21);
-            this.textBoxPassword.TabIndex = 5;
+            this.textBoxPassword.TabIndex = 2;
             // 
             // checkBoxPassView
             // 
@@ -111,7 +111,7 @@
             this.checkBoxPassView.Location = new System.Drawing.Point(243, 128);
             this.checkBoxPassView.Name = "checkBoxPassView";
             this.checkBoxPassView.Size = new System.Drawing.Size(121, 20);
-            this.checkBoxPassView.TabIndex = 6;
+            this.checkBoxPassView.TabIndex = 0;
             this.checkBoxPassView.Text = "Показать пароль";
             this.checkBoxPassView.UseVisualStyleBackColor = true;
             this.checkBoxPassView.CheckedChanged += new System.EventHandler(this.checkBoxPassView_CheckedChanged);

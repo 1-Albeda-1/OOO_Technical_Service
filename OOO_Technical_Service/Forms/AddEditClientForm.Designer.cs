@@ -51,6 +51,7 @@
             this.buttonClose.TabIndex = 22;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonSave
             // 
@@ -64,6 +65,7 @@
             this.buttonSave.TabIndex = 21;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // textBoxFullName
             // 
@@ -122,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(331, 215);
+            this.ClientSize = new System.Drawing.Size(331, 204);
             this.Controls.Add(this.maskedTextBoxPhone);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.label5);
