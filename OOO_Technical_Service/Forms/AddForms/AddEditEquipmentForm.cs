@@ -33,7 +33,7 @@ namespace OOO_Technical_Service.Forms.AddForms
 
         public AddEditEquipmentForm(Equipment equipment) : this()
         {
-            this.Text = "Изменить клиента";
+            this.Text = "Изменить оборудование";
             Equipment = equipment;
             textBoxTitle.Text = Equipment.Title;
             textBoxSerialNumber.Text = Equipment.SerialNumber;

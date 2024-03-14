@@ -74,6 +74,12 @@
     <Compile Include="Forms\AddForms\AddEditEquipmentForm.Designer.cs">
       <DependentUpon>AddEditEquipmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddForms\AddEditSparesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\AddEditSparesForm.Designer.cs">
+      <DependentUpon>AddEditSparesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddForms\AddEmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     <Compile Include="Forms\GridForms\EquipmentForm.Designer.cs">
       <DependentUpon>EquipmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\GridForms\SparesCountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GridForms\SparesCountForm.Designer.cs">
+      <DependentUpon>SparesCountForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +152,9 @@
     <EmbeddedResource Include="Forms\AddForms\AddEditEquipmentForm.resx">
       <DependentUpon>AddEditEquipmentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\AddEditSparesForm.resx">
+      <DependentUpon>AddEditSparesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddForms\AddEmployeeForm.resx">
       <DependentUpon>AddEmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GridForms\EquipmentForm.resx">
       <DependentUpon>EquipmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GridForms\SparesCountForm.resx">
+      <DependentUpon>SparesCountForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
