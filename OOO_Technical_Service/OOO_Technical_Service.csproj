@@ -110,15 +110,15 @@
     <Compile Include="Forms\StatusRequestForm.Designer.cs">
       <DependentUpon>StatusRequestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RequestUserControl.cs">
+    <Compile Include="UserControl\RequestUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="RequestUserControl.Designer.cs">
+    <Compile Include="UserControl\RequestUserControl.Designer.cs">
       <DependentUpon>RequestUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkToEmployee.cs" />
+    <Compile Include="Classes\WorkToEmployee.cs" />
     <EmbeddedResource Include="Forms\AddCommentForm.resx">
       <DependentUpon>AddCommentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,7 +156,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RequestUserControl.resx">
+    <EmbeddedResource Include="UserControl\RequestUserControl.resx">
       <DependentUpon>RequestUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

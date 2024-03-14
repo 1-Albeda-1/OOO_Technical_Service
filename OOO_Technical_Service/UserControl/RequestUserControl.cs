@@ -2,8 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.Entity;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,7 @@ namespace OOO_Technical_Service
             InitializeComponent();
             this.request = request;
             InitRequest(request);
+            PrintComment();
         }
         public Request Request => request;
         private void InitRequest(Request request)
@@ -35,14 +38,32 @@ namespace OOO_Technical_Service
             labelPriority.Text = request.Priority.ToString(); 
             labelSatus.Text = request.Status.ToString();
 
-            if(WorkToEmployee.Employee.RoleId == 1)
+            if (WorkToEmployee.Employee.RoleId == 1)
             {
                 buttonEdit.Enabled = buttonAddComment.Enabled = false;
             }        
         }
+        private void PrintComment()
+        {
+            using (var db = new TechnicalSecviceContext())
+            {
+                dataGridView1.DataSource = db.Comments.Include(x => x.Employee)
+                    .OrderBy(x => x.Employee)
+                    .ToList();
+            }
+        }
         private void buttonAddComment_Click(object sender, EventArgs e)
         {
-
+            AddCommentForm form = new AddCommentForm();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                using (var db = new TechnicalSecviceContext())
+                {
+                    db.Comments.Add(form.Comment);
+                    db.SaveChanges();
+                    PrintComment();
+                }
+            }
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)

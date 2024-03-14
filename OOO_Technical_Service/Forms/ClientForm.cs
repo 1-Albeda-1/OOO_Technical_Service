@@ -70,12 +70,12 @@ namespace OOO_Technical_Service.Forms
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            AddEditClientForm addEditClientForm = new AddEditClientForm();
-            if (addEditClientForm.ShowDialog() == DialogResult.OK)
+            AddEditClientForm form = new AddEditClientForm();
+            if (form.ShowDialog() == DialogResult.OK)
             {
                 using (var db = new TechnicalSecviceContext())
                 {
-                    db.Clients.Add(addEditClientForm.Client);
+                    db.Clients.Add(form.Client);
                     db.SaveChanges();
                     Print();
                 }
@@ -91,8 +91,8 @@ namespace OOO_Technical_Service.Forms
             using (var db = new TechnicalSecviceContext())
             {
                 var client1 = db.Clients.FirstOrDefault(x => x.Id == clientId.Id);
-                AddEditClientForm addEditClientForm = new AddEditClientForm(client1);
-                if (addEditClientForm.ShowDialog() == DialogResult.OK)
+                AddEditClientForm form = new AddEditClientForm(client1);
+                if (form.ShowDialog() == DialogResult.OK)
                 {
                     db.SaveChanges();
                     Print();

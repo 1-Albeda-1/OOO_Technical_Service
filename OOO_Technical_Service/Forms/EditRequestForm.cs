@@ -22,6 +22,11 @@ namespace OOO_Technical_Service.Forms
             checkedListBoxEmployees.DisplayMember = nameof(Employee.FullName);
             Request = new Request();
             Initialize();
+
+            if (WorkToEmployee.Employee.RoleId == 4)
+            {
+                checkedListBoxEmployees.Enabled = true;
+            }
         }
         private void Initialize()
         {
