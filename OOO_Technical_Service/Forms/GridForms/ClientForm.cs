@@ -14,7 +14,7 @@ namespace OOO_Technical_Service.Forms
 {
     public partial class ClientForm : Form
     {
-        private int pageSize = 10;
+        private int pageSize = 5;
         private int oldCountPage = -1;
         private readonly BindingSource bindingSource = new BindingSource();
 

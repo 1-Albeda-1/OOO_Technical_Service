@@ -56,34 +56,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddCommentForm.cs">
+    <Compile Include="Forms\AddForms\AddCommentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddCommentForm.Designer.cs">
+    <Compile Include="Forms\AddForms\AddCommentForm.Designer.cs">
       <DependentUpon>AddCommentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AddEditClientForm.cs">
+    <Compile Include="Forms\AddForms\AddEditClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddEditClientForm.Designer.cs">
+    <Compile Include="Forms\AddForms\AddEditClientForm.Designer.cs">
       <DependentUpon>AddEditClientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AddEmployeeForm.cs">
+    <Compile Include="Forms\AddForms\AddEditEquipmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddEmployeeForm.Designer.cs">
+    <Compile Include="Forms\AddForms\AddEditEquipmentForm.Designer.cs">
+      <DependentUpon>AddEditEquipmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddForms\AddEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\AddEmployeeForm.Designer.cs">
       <DependentUpon>AddEmployeeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ClientForm.cs">
+    <Compile Include="Forms\GridForms\ClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ClientForm.Designer.cs">
+    <Compile Include="Forms\GridForms\ClientForm.Designer.cs">
       <DependentUpon>ClientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EditRequestForm.cs">
+    <Compile Include="Forms\AddForms\EditRequestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\EditRequestForm.Designer.cs">
+    <Compile Include="Forms\AddForms\EditRequestForm.Designer.cs">
       <DependentUpon>EditRequestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AuthorizationForm.cs">
@@ -92,11 +98,17 @@
     <Compile Include="Forms\AuthorizationForm.Designer.cs">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AddRequestForm.cs">
+    <Compile Include="Forms\AddForms\AddRequestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddRequestForm.Designer.cs">
+    <Compile Include="Forms\AddForms\AddRequestForm.Designer.cs">
       <DependentUpon>AddRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GridForms\EquipmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GridForms\EquipmentForm.Designer.cs">
+      <DependentUpon>EquipmentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MenuForm.cs">
       <SubType>Form</SubType>
@@ -119,26 +131,32 @@
       <DependentUpon>RequestUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\WorkToEmployee.cs" />
-    <EmbeddedResource Include="Forms\AddCommentForm.resx">
+    <EmbeddedResource Include="Forms\AddForms\AddCommentForm.resx">
       <DependentUpon>AddCommentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddEditClientForm.resx">
+    <EmbeddedResource Include="Forms\AddForms\AddEditClientForm.resx">
       <DependentUpon>AddEditClientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddEmployeeForm.resx">
+    <EmbeddedResource Include="Forms\AddForms\AddEditEquipmentForm.resx">
+      <DependentUpon>AddEditEquipmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\AddEmployeeForm.resx">
       <DependentUpon>AddEmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ClientForm.resx">
+    <EmbeddedResource Include="Forms\GridForms\ClientForm.resx">
       <DependentUpon>ClientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EditRequestForm.resx">
+    <EmbeddedResource Include="Forms\AddForms\EditRequestForm.resx">
       <DependentUpon>EditRequestForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddRequestForm.resx">
+    <EmbeddedResource Include="Forms\AddForms\AddRequestForm.resx">
       <DependentUpon>AddRequestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AuthorizationForm.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GridForms\EquipmentForm.resx">
+      <DependentUpon>EquipmentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>

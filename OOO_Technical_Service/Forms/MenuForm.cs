@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.Entity;
 using TechnicalService.Context.DB;
 using TechnicalService.Context.Models;
+using OOO_Technical_Service.Forms.GridForms;
 
 namespace OOO_Technical_Service.Forms
 {
@@ -66,6 +67,11 @@ namespace OOO_Technical_Service.Forms
             ClientForm form = new ClientForm();
             form.ShowDialog();
         }
+        private void оборудованиеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EquipmentForm form = new EquipmentForm();
+            form.ShowDialog();
+        }
 
         private void авторизацияToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -82,6 +88,6 @@ namespace OOO_Technical_Service.Forms
             Application.Exit();
         }
 
-        
+       
     }
 }
