@@ -65,15 +65,15 @@ namespace OOO_Technical_Service.Forms
                 if (item is RequestUserControl requestUserControl)
                 {
                     if (selectedStatusId != -1 &&
-                        requestUserControl.Request.Status.Id == selectedStatusId)
+                        requestUserControl.Request.Status.Id != selectedStatusId)
                     {
                         visible = false;
                     }
 
                     if (!(string.IsNullOrEmpty(textBoxSearch.Text) 
-                        || requestUserControl.Request.Equipment.ToString().ToLower().Contains(textBoxSearch.Text.ToLower()) 
-                        || requestUserControl.Request.BrokenType.ToString().ToLower().Contains(textBoxSearch.Text.ToLower())
-                        || requestUserControl.Request.Id.ToString().ToLower().Contains(textBoxSearch.Text.ToLower())))
+                        || requestUserControl.Request.Equipment.Title.ToLower().Contains(textBoxSearch.Text.ToLower()))
+                        || requestUserControl.Request.BrokenType.Title.ToLower().Contains(textBoxSearch.Text.ToLower())
+                        || requestUserControl.Request.Client.FullName.ToLower().Contains(textBoxSearch.Text.ToLower()))
                     {
                         visible = false;
                     }
@@ -81,7 +81,7 @@ namespace OOO_Technical_Service.Forms
                 }
             }
         }
-
+        
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             AddRequestForm form = new AddRequestForm();
