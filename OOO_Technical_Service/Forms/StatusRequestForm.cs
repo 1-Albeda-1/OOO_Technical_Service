@@ -47,9 +47,9 @@ namespace OOO_Technical_Service.Forms
                 {
                     var requestUserControl = new RequestUserControl(request);
                     requestUserControl.Parent = flowLayoutPanel1;
-                    if(request.Status.ToString() == "Выполнен")
+                    if(request.Status.ToString() == "Выполнено")
                     {
-                        readyRequest++;
+                        readyRequest++;     
                     }          
                 }
             }
@@ -95,9 +95,10 @@ namespace OOO_Technical_Service.Forms
                     db.Requests.Add(form.Request);
                     db.SaveChanges();
                 }
+                var requestUserControl = new RequestUserControl(form.Request);
+                requestUserControl.Parent = flowLayoutPanel1;
             }
-            var requestUserControl = new RequestUserControl(form.Request);
-            requestUserControl.Parent = flowLayoutPanel1;
+            
         }
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)

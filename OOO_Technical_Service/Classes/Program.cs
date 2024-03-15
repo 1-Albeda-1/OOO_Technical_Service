@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOO_Technical_Service.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,11 @@ namespace OOO_Technical_Service
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AuthorizationForm());
+            var form = new AuthorizationForm();
+            if(form.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new MenuForm());
+            }
         }
     }
 }

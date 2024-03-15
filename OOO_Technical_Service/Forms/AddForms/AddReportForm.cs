@@ -7,28 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TechnicalService.Context.DB;
 using TechnicalService.Context.Models;
 
-namespace OOO_Technical_Service.Forms
+namespace OOO_Technical_Service.Forms.AddForms
 {
-    public partial class AddCommentForm : Form
+    public partial class AddReportForm : Form
     {
         private int idRequest;
-        public Comment Comment { get; set; }
-        public AddCommentForm()
+        public Report Report { get; set; }
+        public AddReportForm()
         {
             InitializeComponent();
-            Comment = new Comment();
-            labelFIO.Text = WorkToEmployee.Employee.FullName.ToString();
+            Report = new Report();
+        }
+        public AddReportForm(int requestId): this()
+        {
+            idRequest = requestId;
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(richTextBoxComment.Text))
+            if (!string.IsNullOrWhiteSpace(richTextBoxReason.Text))
             {
-                Comment.EmployeeId = WorkToEmployee.Employee.Id;
-                Comment.CommentText = richTextBoxComment.Text;
+                Report.RequestId = idRequest;
+                Report.CompletionDate = DateTimeOffset.Now;
+                Report.Price = numericUpDownPrice.Value;
+                Report.Reason = richTextBoxReason.Text;
                 DialogResult = DialogResult.OK;
             }
             else

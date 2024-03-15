@@ -37,8 +37,7 @@ namespace OOO_Technical_Service
                     else
                     {
                         WorkToEmployee.Employee = user;
-                        MenuForm form = new MenuForm();
-                        form.Show();
+                        this.DialogResult = DialogResult.OK;
                     }
                 }
             }
@@ -53,8 +52,7 @@ namespace OOO_Technical_Service
                 FullName = "Неавторизованный гость",
                 RoleId = 1
             };
-            MenuForm form = new MenuForm();
-            form.Show();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void checkBoxPassView_CheckedChanged(object sender, EventArgs e)

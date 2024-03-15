@@ -33,6 +33,8 @@
             this.базыДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.заявкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.клиентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оборудованиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.запчастиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.авторизацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,9 +43,8 @@
             this.toolStripLabelFIO = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabelRole = new System.Windows.Forms.ToolStripLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.оборудованиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.запчастиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отчетностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,7 +64,6 @@
             this.добавитьРаботникаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1104, 37);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
@@ -74,7 +74,8 @@
             this.заявкиToolStripMenuItem,
             this.клиентыToolStripMenuItem,
             this.оборудованиеToolStripMenuItem,
-            this.запчастиToolStripMenuItem});
+            this.запчастиToolStripMenuItem,
+            this.отчетностьToolStripMenuItem});
             this.базыДанныхToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.базыДанныхToolStripMenuItem.Name = "базыДанныхToolStripMenuItem";
             this.базыДанныхToolStripMenuItem.Size = new System.Drawing.Size(174, 33);
@@ -97,6 +98,24 @@
             this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.клиентыToolStripMenuItem.Text = "Клиенты";
             this.клиентыToolStripMenuItem.Click += new System.EventHandler(this.клиентыToolStripMenuItem_Click);
+            // 
+            // оборудованиеToolStripMenuItem
+            // 
+            this.оборудованиеToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.оборудованиеToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.оборудованиеToolStripMenuItem.Name = "оборудованиеToolStripMenuItem";
+            this.оборудованиеToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.оборудованиеToolStripMenuItem.Text = "Оборудование";
+            this.оборудованиеToolStripMenuItem.Click += new System.EventHandler(this.оборудованиеToolStripMenuItem_Click);
+            // 
+            // запчастиToolStripMenuItem
+            // 
+            this.запчастиToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.запчастиToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.запчастиToolStripMenuItem.Name = "запчастиToolStripMenuItem";
+            this.запчастиToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.запчастиToolStripMenuItem.Text = "Запчасти";
+            this.запчастиToolStripMenuItem.Click += new System.EventHandler(this.запчастиToolStripMenuItem_Click);
             // 
             // справкаToolStripMenuItem
             // 
@@ -174,15 +193,6 @@
     "лем, связанных с вашим оборудованием.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // оборудованиеToolStripMenuItem
-            // 
-            this.оборудованиеToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
-            this.оборудованиеToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.оборудованиеToolStripMenuItem.Name = "оборудованиеToolStripMenuItem";
-            this.оборудованиеToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
-            this.оборудованиеToolStripMenuItem.Text = "Оборудование";
-            this.оборудованиеToolStripMenuItem.Click += new System.EventHandler(this.оборудованиеToolStripMenuItem_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::OOO_Technical_Service.Properties.Resources.icons8_tools_50;
@@ -194,14 +204,12 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // запчастиToolStripMenuItem
+            // отчетностьToolStripMenuItem
             // 
-            this.запчастиToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
-            this.запчастиToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.запчастиToolStripMenuItem.Name = "запчастиToolStripMenuItem";
-            this.запчастиToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
-            this.запчастиToolStripMenuItem.Text = "Запчасти";
-            this.запчастиToolStripMenuItem.Click += new System.EventHandler(this.запчастиToolStripMenuItem_Click);
+            this.отчетностьToolStripMenuItem.Name = "отчетностьToolStripMenuItem";
+            this.отчетностьToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.отчетностьToolStripMenuItem.Text = "Отчетность";
+            this.отчетностьToolStripMenuItem.Click += new System.EventHandler(this.отчетностьToolStripMenuItem_Click);
             // 
             // MenuForm
             // 
@@ -215,7 +223,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1128, 559);
             this.MinimizeBox = false;
@@ -250,5 +258,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem оборудованиеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem запчастиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem отчетностьToolStripMenuItem;
     }
 }

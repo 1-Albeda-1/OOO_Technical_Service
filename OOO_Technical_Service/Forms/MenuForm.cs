@@ -19,6 +19,15 @@ namespace OOO_Technical_Service.Forms
         public MenuForm()
         {
             InitializeComponent();
+            Authorization();
+        }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+        private void Authorization()
+        {
             toolStripLabelFIO.Text = $"Пользователь: {WorkToEmployee.Employee.FullName}";
             using (var db = new TechnicalSecviceContext())
             {
@@ -33,17 +42,11 @@ namespace OOO_Technical_Service.Forms
                     toolStripLabelRole.Text = "Статус: Неавторизованный гость";
                 }
             }
-            if(WorkToEmployee.Employee.RoleId == 3 || WorkToEmployee.Employee.RoleId == 4)
+            if (WorkToEmployee.Employee.RoleId == 3 || WorkToEmployee.Employee.RoleId == 4)
             {
                 добавитьРаботникаToolStripMenuItem.Visible = true;
             }
         }
-
-        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("");
-        }
-
         private void добавитьРаботникаToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddEmployeeForm form = new AddEmployeeForm();
@@ -81,7 +84,10 @@ namespace OOO_Technical_Service.Forms
         private void авторизацияToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AuthorizationForm form = new AuthorizationForm();
-            form.ShowDialog();       
+            if(form.ShowDialog() == DialogResult.OK)
+            {
+                Authorization();
+            }
         }
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -93,6 +99,10 @@ namespace OOO_Technical_Service.Forms
             Application.Exit();
         }
 
-        
+        private void отчетностьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportForm form = new ReportForm();
+            form.ShowDialog();
+        }
     }
 }
