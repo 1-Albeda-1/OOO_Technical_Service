@@ -47,7 +47,7 @@ namespace OOO_Technical_Service.Forms
                 {
                     var requestUserControl = new RequestUserControl(request);
                     requestUserControl.Parent = flowLayoutPanel1;
-                    if(request.Status.ToString() == "Выполнено")
+                    if(request.Status.Title == "Выполнено")
                     {
                         readyRequest++;     
                     }          
