@@ -35,10 +35,6 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabelCount = new System.Windows.Forms.ToolStripLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -49,6 +45,10 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -84,9 +84,9 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column4,
             this.Column5,
-            this.Column2});
+            this.Column2,
+            this.Column4});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(189)))), ((int)(((byte)(240)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.142858F);
@@ -110,42 +110,6 @@
             this.dataGridView1.RowTemplate.Height = 31;
             this.dataGridView1.Size = new System.Drawing.Size(481, 191);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "RequestId";
-            this.Column1.HeaderText = "Номер заявки";
-            this.Column1.MinimumWidth = 9;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 175;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "CompletionDate";
-            this.Column4.HeaderText = "Время выполнения";
-            this.Column4.MinimumWidth = 9;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 175;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Price";
-            this.Column5.HeaderText = "Стоимость";
-            this.Column5.MinimumWidth = 9;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 175;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Reason";
-            this.Column2.HeaderText = "Причина неисправности";
-            this.Column2.MinimumWidth = 9;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 175;
             // 
             // bindingNavigator1
             // 
@@ -247,6 +211,41 @@
             this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "RequestId";
+            this.Column1.HeaderText = "Номер заявки";
+            this.Column1.MinimumWidth = 9;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 110;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Price";
+            this.Column5.HeaderText = "Стоимость";
+            this.Column5.MinimumWidth = 9;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Reason";
+            this.Column2.HeaderText = "Причина неисправности";
+            this.Column2.MinimumWidth = 9;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 175;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "CompletionDate";
+            this.Column4.HeaderText = "Время выполнения";
+            this.Column4.MinimumWidth = 9;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 175;
+            // 
             // ReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -286,10 +285,10 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
