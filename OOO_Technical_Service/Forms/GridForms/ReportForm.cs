@@ -27,7 +27,7 @@ namespace OOO_Technical_Service.Forms.GridForms
         {
             using (var db = new TechnicalSecviceContext())
             {
-                var count = db.Clients.Count();
+                var count = db.Reports.Count();
                 var countPage = (int)Math.Ceiling((decimal)count / pageSize);
 
                 if (oldCountPage != countPage)
