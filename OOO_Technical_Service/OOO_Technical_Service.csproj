@@ -238,6 +238,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="icons8-tools-50.ico" />
     <Content Include="Resources\icons8-add-user-male-50.ico" />
     <Content Include="Resources\icons8-chat-bubble-50.ico" />
     <Content Include="Resources\icons8-detail-67.ico" />

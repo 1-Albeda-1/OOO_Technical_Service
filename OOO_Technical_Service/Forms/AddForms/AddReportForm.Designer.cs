@@ -42,9 +42,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(12, 78);
+            this.label5.Location = new System.Drawing.Point(18, 78);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(287, 27);
+            this.label5.Size = new System.Drawing.Size(163, 17);
             this.label5.TabIndex = 37;
             this.label5.Text = "Прчина неисправности";
             // 
@@ -54,7 +54,7 @@
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClose.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonClose.Location = new System.Drawing.Point(272, 200);
+            this.buttonClose.Location = new System.Drawing.Point(212, 201);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(104, 35);
             this.buttonClose.TabIndex = 35;
@@ -68,7 +68,7 @@
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSave.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSave.Location = new System.Drawing.Point(139, 200);
+            this.buttonSave.Location = new System.Drawing.Point(79, 201);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(104, 35);
             this.buttonSave.TabIndex = 34;
@@ -80,15 +80,15 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(164, 26);
+            this.label1.Location = new System.Drawing.Point(101, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 27);
+            this.label1.Size = new System.Drawing.Size(80, 17);
             this.label1.TabIndex = 32;
             this.label1.Text = "Стоимость";
             // 
             // richTextBoxReason
             // 
-            this.richTextBoxReason.Location = new System.Drawing.Point(305, 80);
+            this.richTextBoxReason.Location = new System.Drawing.Point(187, 76);
             this.richTextBoxReason.Name = "richTextBoxReason";
             this.richTextBoxReason.Size = new System.Drawing.Size(190, 96);
             this.richTextBoxReason.TabIndex = 38;
@@ -96,22 +96,22 @@
             // 
             // numericUpDownPrice
             // 
-            this.numericUpDownPrice.Location = new System.Drawing.Point(305, 26);
+            this.numericUpDownPrice.Location = new System.Drawing.Point(187, 22);
             this.numericUpDownPrice.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.numericUpDownPrice.Name = "numericUpDownPrice";
-            this.numericUpDownPrice.Size = new System.Drawing.Size(190, 31);
+            this.numericUpDownPrice.Size = new System.Drawing.Size(190, 21);
             this.numericUpDownPrice.TabIndex = 39;
             // 
             // AddReportForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(532, 277);
+            this.ClientSize = new System.Drawing.Size(401, 277);
             this.Controls.Add(this.numericUpDownPrice);
             this.Controls.Add(this.richTextBoxReason);
             this.Controls.Add(this.label5);
