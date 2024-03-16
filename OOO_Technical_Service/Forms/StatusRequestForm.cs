@@ -40,7 +40,7 @@ namespace OOO_Technical_Service.Forms
 
                 comboBoxStatus.SelectedIndex = 0;
 
-                var requests = db.Requests.Include(x => x.Employees).Include(x => x.Comments).ToList();
+                var requests = db.Requests.Include(x => x.Employees).Include(x => x.Comments).Include(x => x.Equipment).ToList();
                 readyRequest = 0;
 
                 foreach (var request in requests)
@@ -71,12 +71,11 @@ namespace OOO_Technical_Service.Forms
                     }
 
                     if (!(string.IsNullOrEmpty(textBoxSearch.Text) 
-                        || requestUserControl.Request.Equipment.Title.ToLower().Contains(textBoxSearch.Text.ToLower()))
-                        || requestUserControl.Request.BrokenType.Title.ToLower().Contains(textBoxSearch.Text.ToLower())
-                        || requestUserControl.Request.Client.FullName.ToLower().Contains(textBoxSearch.Text.ToLower()))
+                        || requestUserControl.Request.Equipment.Title.ToLower().Contains(textBoxSearch.Text.ToLower())))
                     {
                         visible = false;
                     }
+
                     requestUserControl.Visible = visible;
                 }
             }

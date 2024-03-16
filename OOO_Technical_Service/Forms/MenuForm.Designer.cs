@@ -35,6 +35,7 @@
             this.клиентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оборудованиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.запчастиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отчетностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.авторизацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,6 @@
             this.toolStripLabelRole = new System.Windows.Forms.ToolStripLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.отчетностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,7 +64,7 @@
             this.добавитьРаботникаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1104, 37);
+            this.menuStrip1.Size = new System.Drawing.Size(1104, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,7 +78,7 @@
             this.отчетностьToolStripMenuItem});
             this.базыДанныхToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.базыДанныхToolStripMenuItem.Name = "базыДанныхToolStripMenuItem";
-            this.базыДанныхToolStripMenuItem.Size = new System.Drawing.Size(174, 33);
+            this.базыДанныхToolStripMenuItem.Size = new System.Drawing.Size(174, 31);
             this.базыДанныхToolStripMenuItem.Text = "Базы данных";
             // 
             // заявкиToolStripMenuItem
@@ -117,11 +117,20 @@
             this.запчастиToolStripMenuItem.Text = "Запчасти";
             this.запчастиToolStripMenuItem.Click += new System.EventHandler(this.запчастиToolStripMenuItem_Click);
             // 
+            // отчетностьToolStripMenuItem
+            // 
+            this.отчетностьToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(142)))));
+            this.отчетностьToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.отчетностьToolStripMenuItem.Name = "отчетностьToolStripMenuItem";
+            this.отчетностьToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.отчетностьToolStripMenuItem.Text = "Отчетность";
+            this.отчетностьToolStripMenuItem.Click += new System.EventHandler(this.отчетностьToolStripMenuItem_Click);
+            // 
             // справкаToolStripMenuItem
             // 
             this.справкаToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(134, 33);
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(134, 31);
             this.справкаToolStripMenuItem.Text = "Справка";
             this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
             // 
@@ -129,7 +138,7 @@
             // 
             this.выходToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(98, 33);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(98, 31);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -137,7 +146,7 @@
             // 
             this.авторизацияToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.авторизацияToolStripMenuItem.Name = "авторизацияToolStripMenuItem";
-            this.авторизацияToolStripMenuItem.Size = new System.Drawing.Size(177, 33);
+            this.авторизацияToolStripMenuItem.Size = new System.Drawing.Size(177, 31);
             this.авторизацияToolStripMenuItem.Text = "Авторизация";
             this.авторизацияToolStripMenuItem.Click += new System.EventHandler(this.авторизацияToolStripMenuItem_Click);
             // 
@@ -145,7 +154,7 @@
             // 
             this.добавитьРаботникаToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.добавитьРаботникаToolStripMenuItem.Name = "добавитьРаботникаToolStripMenuItem";
-            this.добавитьРаботникаToolStripMenuItem.Size = new System.Drawing.Size(271, 33);
+            this.добавитьРаботникаToolStripMenuItem.Size = new System.Drawing.Size(271, 31);
             this.добавитьРаботникаToolStripMenuItem.Text = "Добавить работника";
             this.добавитьРаботникаToolStripMenuItem.Visible = false;
             this.добавитьРаботникаToolStripMenuItem.Click += new System.EventHandler(this.добавитьРаботникаToolStripMenuItem_Click);
@@ -203,13 +212,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // отчетностьToolStripMenuItem
-            // 
-            this.отчетностьToolStripMenuItem.Name = "отчетностьToolStripMenuItem";
-            this.отчетностьToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
-            this.отчетностьToolStripMenuItem.Text = "Отчетность";
-            this.отчетностьToolStripMenuItem.Click += new System.EventHandler(this.отчетностьToolStripMenuItem_Click);
             // 
             // MenuForm
             // 

@@ -48,7 +48,11 @@ namespace OOO_Technical_Service
                     var date = request1.RequestDate.ToString("dd-MM-yyyy");
                     labelDate.Text = date;
                 }
-                
+
+                if (request1.Status.Title == "Выполнено")
+                {
+                    this.BackColor = Color.DarkGray;      
+                }
                 var comment = db.Requests.Include(x => x.Comments).FirstOrDefault(x => x.Id == request.Id).Comments.Select(x => x.Id);
                 dataGridView1.DataSource = db.Comments.Include(x => x.Employee).Where(x => comment.Contains(x.Id)).ToList();
             }
